@@ -1,7 +1,13 @@
 import Lottie from "lottie-react";
 import React from "react";
+// lottie animation
 import heroAnimation from "../assets/lottie/Animation - 1699699047899.json";
+
+// react-icon
 import { AiOutlineRight } from "react-icons/ai";
+
+// react typing import
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -25,9 +31,26 @@ const Hero = () => {
             </p>
 
             {/* <!-- Title --> */}
-            <div className="max-w-2xl">
-              <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
-                Get The Best Website and App for Your Company
+            <div className="max-w-3xl max-h-full">
+              <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-3xl dark:text-gray-200">
+                <TypeAnimation
+                  preRenderFirstString={true}
+                  sequence={[
+                    // Same substring at the start will only be typed out once, initially
+                    "Get The Best Website for Your Company",
+                    3000, // wait 1s before replacing "Mice" with "Hamsters"
+                    "Get The Best App for Your Company",
+                    3000,
+                    "Get The Best Web Hosting for Your Company",
+                    3000,
+                    "Get The Best SEO for Your Company",
+                    3000,
+                  ]}
+                  wrapper="span"
+                  speed={150}
+                  style={{ whiteSpace: "pre-line", display: "inline-block" }}
+                  repeat={Infinity}
+                />
               </h1>
             </div>
             {/* <!-- End Title --> */}
@@ -48,7 +71,7 @@ const Hero = () => {
                 <span className="text-gray-200 overflow-hidden font-semibold pl-2 transform group-hover:translate-x-10 transition-all duration-300">
                   Get Quote
                 </span>
-                <span className="absolute right-0 h-full w-10 rounded-lg bg-white flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300">
+                <span className="absolute right-0 pl-1 h-full w-10 rounded-lg bg-[#fbf8f6] flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300">
                   <AiOutlineRight className="text-orange-500 text-xl" />
                 </span>
               </a>
