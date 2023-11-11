@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animationLogo {
+  animation: animationLogo 2s ease-in-out;
+}
+@keyframes animationLogo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

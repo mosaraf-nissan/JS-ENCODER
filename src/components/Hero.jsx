@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import React from "react";
 import heroAnimation from "../assets/lottie/Animation - 1699699047899.json";
-import { AiOutlineCaretDown } from "react-icons/ai";
+import { AiOutlineRight } from "react-icons/ai";
 
 const Hero = () => {
   return (
@@ -12,8 +12,8 @@ const Hero = () => {
         aria-hidden="true"
         className="flex absolute -top-96 start-1/2 transform -translate-x-1/2"
       >
-        <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:from-violet-900/50 dark:to-purple-900"></div>
-        <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70 "></div>
+        <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] dark:w-0 dark:h-0 dark:from-slate-700 dark:to-slate-900"></div>
+        <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] dark:w-[110rem] dark:h-[500rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 "></div>
       </div>
       {/* <!-- End Gradients --> */}
 
@@ -40,13 +40,18 @@ const Hero = () => {
             </div>
 
             {/* <!-- Buttons --> */}
-            <div className="flex justify-center items-center mt-10">
-              <button
-                className="relative px-8 py-2 rounded-md bg-white isolation-auto z-10 border-2 border-b-0 text-black/90 font-bold border-blue-200 shadow-md shadow-orange-300  dark:from-blue-400 dark:to-violet-400
-        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-[#2A93DE] before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
+            <div className="flex  justify-center items-center mt-10">
+              <a
+                className="rounded-lg  relative w-36 h-10 cursor-pointer flex items-center border border-orange-600 bg-orange-600 group hover:bg-orange-600 active:bg-green-500 active:border-green-500"
+                href="#"
               >
-                Explore More <AiOutlineCaretDown className="inline" />
-              </button>
+                <span className="text-gray-200 overflow-hidden font-semibold pl-2 transform group-hover:translate-x-10 transition-all duration-300">
+                  Get Quote
+                </span>
+                <span className="absolute right-0 h-full w-10 rounded-lg bg-white flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300">
+                  <AiOutlineRight className="text-orange-500 text-xl" />
+                </span>
+              </a>
             </div>
 
             {/* <!-- End Buttons --> */}
