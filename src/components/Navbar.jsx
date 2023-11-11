@@ -6,9 +6,9 @@ import { IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700">
+    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-gray-800 dark:border-gray-700 dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-blue-900/70">
       <nav
-        className="relative max-w-7xl text-lg w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8"
+        className="relative max-w-7xl text-lg w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-0"
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
@@ -39,7 +39,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
             <a
-              className="font-medium text-[#2A93DE] sm:py-6 dark:text-blue-500"
+              className="font-medium text-gray-700 sm:py-6 dark:text-blue-500"
               href="#"
               aria-current="page"
             >
@@ -48,13 +48,13 @@ const Navbar = () => {
             <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
               <button
                 type="button"
-                className="flex items-center  text-[#2A93DE] hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 "
+                className="flex items-center  text-gray-700 hover:text-gray-400 font-medium dark:text-gray-400 dark:hover:text-gray-500 "
               >
                 Services
                 <BiChevronDown />
               </button>
 
-              <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
+              <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-20 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
                 <a
                   className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
@@ -83,19 +83,20 @@ const Navbar = () => {
               </div>
             </div>
             <a
-              className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
+              className="font-medium text-gray-700 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
               href="#"
             >
               Career
             </a>
             <a
-              className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
+              className="font-medium text-gray-700 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
               href="#"
             >
               Contact
             </a>
+            {/* todo darkMode toggle */}
             <a
-              className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
+              className="font-medium text-gray-700 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
               href="#"
             >
               <BsMoonStarsFill />
@@ -104,7 +105,7 @@ const Navbar = () => {
               className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
               href="#"
             >
-              <BsFillSunFill />
+              {/* <BsFillSunFill /> */}
             </a>
           </div>
         </div>
