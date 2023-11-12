@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+// react icons for dark and light
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
 const Navbar = () => {
-  // Dark Mode
+  // Dark Mode toggle state
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -34,6 +36,7 @@ const Navbar = () => {
               alt="JsEncoderLogo"
             />
           </Link>
+          {/* burger menu and close */}
           <div className="sm:hidden">
             <button
               type="button"
@@ -78,6 +81,7 @@ const Navbar = () => {
             >
               About
             </a>
+            {/* service dropdown */}
             <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
               <button
                 type="button"
@@ -100,7 +104,7 @@ const Navbar = () => {
                   ></path>
                 </svg>
               </button>
-
+              {/* services list in dropdown */}
               <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-50 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
                 <a
                   className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"

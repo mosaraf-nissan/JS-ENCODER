@@ -47,8 +47,10 @@ const Hero = () => {
                     3000,
                   ]}
                   wrapper="span"
-                  speed={150}
-                  style={{ whiteSpace: "pre-line", display: "inline-block" }}
+                  cursor={false} // omit the default css typing animation class
+                  className="type"
+                  deletionSpeed={60}
+                  speed={{ type: "keyStrokeDelayInMs", value: 150 }}
                   repeat={Infinity}
                 />
               </h1>
