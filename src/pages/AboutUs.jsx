@@ -8,7 +8,7 @@ const AboutUs = () => {
   const [ref, visible] = useOnScreen({ rootMargin: "-10px" });
   return (
     <>
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#1D283A]">
+      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#1D283A]">
         {/* <!-- Grid --> */}
         <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
           <div className="lg:col-span-3">
@@ -25,21 +25,22 @@ const AboutUs = () => {
               with a great rate of success.
             </p>
 
-            <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
+            <div className="mt- lg:mt- flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
               <Button>Contact Us</Button>
             </div>
 
-            {/* <!-- Brands --> */}
+            {/* Total clients */}
             <div ref={ref} className="mt-6 lg:mt-12">
               {visible && (
-                <span className="text-xl font-medium text-gray-800 uppercase dark:text-gray-200 ">
-                  Trusted by:{" "}
+                <span className="text-xl font-medium text-gray-800 uppercase dark:text-gray-200">
+                  total number of clients:
+                  {/* react counter */}
                   <CountUp
-                    className="text-green-500 text-5xl"
+                    className="text-green-500 text-3xl"
                     end={1000}
                     duration={5}
                   />{" "}
-                  People
+                  pluse
                 </span>
               )}
             </div>
@@ -48,7 +49,7 @@ const AboutUs = () => {
           {/* <!-- End Col --> */}
 
           <div className="lg:col-span-4 mt-10 lg:mt-0">
-            <div className="flex justify-center items-center gap-4 flex-col lg:flex-row ">
+            <div className="flex justify-center items-center mt-10 lg:mt-0 gap-2 lg:gap-4 flex-col lg:flex-row ">
               <div className="max-w-96 h-96 bg-red-500 p-2 rounded-xl ">
                 <div className="max-w-96 h-96 bg-cyan-50 border-4 rounded-xl shadow-md shadow-orange-500 p-2 flex flex-col justify-center items-center -mt-14">
                   <h3 className="text-2xl font-bold mb-5">
