@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-10 dark:bg-black">
+      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#1D283A]">
         {/* <!-- Grid --> */}
         <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
           <div className="lg:col-span-3">
