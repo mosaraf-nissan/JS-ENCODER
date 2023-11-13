@@ -18,7 +18,7 @@ const Navbar = () => {
   }, [isDarkMode]);
 
   return (
-    <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 border-b border-gray-200 text-sm py-3 sm:py-0  dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 dark:border-0">
+    <header className="sticky top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 border-b border-gray-200 text-sm py-3 sm:py-0  dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 dark:border-0">
       <nav
         className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-0"
         aria-label="Global"

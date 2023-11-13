@@ -36,7 +36,7 @@ const AboutUs = () => {
                   total number of clients:
                   {/* react counter */}
                   <CountUp
-                    className="text-green-500 text-3xl"
+                    className="text-[#6394C6] text-3xl"
                     delay={0.5}
                     end={1000}
                     duration={5}
@@ -51,10 +51,10 @@ const AboutUs = () => {
 
           <div className="lg:col-span-4 mt-10 lg:mt-0">
             <div className="flex justify-center items-center mt-10 lg:mt-0 gap-2 lg:gap-4 flex-col lg:flex-row ">
-              <div className="max-w-96 h-96 bg-red-500 p-2 rounded-xl ">
-                <div className="max-w-96 h-96 bg-cyan-50 border-4 rounded-xl shadow-md shadow-orange-500 p-2 flex flex-col justify-center items-center -mt-14">
+              <div className="max-w-96 h-96 bg-[#4c96df] p-2 rounded-xl ">
+                <div className="max-w-96 h-96 bg-cyan-50 border-4 rounded-xl shadow-md shadow-orange-400 p-2 flex flex-col justify-center items-center -mt-14">
                   <h3 className="text-2xl font-bold mb-5">
-                    We are JS <span className="text-orange-500">Encoder</span>
+                    We are JS <span className="text-[#6394C6]">Encoder</span>
                   </h3>
                   <p>
                     We are the people who eat, drink, sleep and play with SE0
@@ -65,10 +65,10 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="max-w-96 h-96 bg-red-500 p-2 rounded-xl ">
-                <div className="max-w-96 h-96 mt-10  bg-cyan-50 border-4 rounded-xl shadow-md shadow-orange-500 p-2 flex flex-col justify-center items-center">
+              <div className="max-w-96 h-96 bg-[#4c96df] p-2 rounded-xl ">
+                <div className="max-w-96 h-96 mt-10  bg-cyan-50 border-4 rounded-xl shadow-md shadow-orange-400 p-2 flex flex-col justify-center items-center">
                   <h3 className="text-2xl font-bold mb-5">
-                    How We <span className="text-orange-500">Formed</span>
+                    How We <span className="text-[#4c96df]">Formed</span>
                   </h3>
                   <p>
                     When we started we had nothing more than few computers, now
