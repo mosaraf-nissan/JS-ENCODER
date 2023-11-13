@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "../../components/ServiceCard";
+import ServiceCard from "../components/ServiceCard";
 
 import { FaCode } from "react-icons/fa";
 
@@ -54,7 +54,7 @@ const ExcluServices = () => {
         <p className="text-center text-sm font-medium bg-clip-text bg-gradient-to-l from-orange-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
           WHAT WE DO
         </p>
-        <h2 className="text-center text-5xl font-bold dark:text-white pb-10">
+        <h2 className="text-center md:text-5xl font-bold dark:text-white pb-10">
           We Provide{" "}
           <span className="bg-clip-text bg-gradient-to-l from-[#6394C6] to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
             Exclusive
