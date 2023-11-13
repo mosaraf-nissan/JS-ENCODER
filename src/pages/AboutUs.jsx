@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
-import CountUp from "react-CountUp";
+import CountUp from "react-countup";
 import useOnScreen from "../hooks/useOnScreen";
 
 const AboutUs = () => {
@@ -37,6 +37,7 @@ const AboutUs = () => {
                   {/* react counter */}
                   <CountUp
                     className="text-green-500 text-3xl"
+                    delay={0.5}
                     end={1000}
                     duration={5}
                   />{" "}
@@ -70,11 +71,11 @@ const AboutUs = () => {
                     How We <span className="text-orange-500">Formed</span>
                   </h3>
                   <p>
-                    We are the people who eat, drink, sleep and play with SE0
-                    and development. We don&apos;t do work for money, we love
-                    this work and that&apos;s why we earn money. We love to work
-                    collaboratively with our clients to ensure that the
-                    objectives are met by our proven strategies.
+                    When we started we had nothing more than few computers, now
+                    have 18 members in our team. How we did it? We formed with
+                    very easy calculation, gradually with 1,2,3,4…..18 by
+                    satisfying over 300 clients for SEO, SMM and Development
+                    Projects for the last six years.
                   </p>
                 </div>
               </div>
