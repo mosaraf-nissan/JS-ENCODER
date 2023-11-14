@@ -5,6 +5,7 @@ import AboutUs from "../AboutUs";
 import ExcluServices from "../ExcluServices";
 import OurTeam from "../OurTeam";
 import OurPortfolio from "../OurPortfolio";
+import Testimonials from "../Testimonials";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <ExcluServices />
       <OurTeam />
       <OurPortfolio />
+      <Testimonials />
     </div>
   );
 };

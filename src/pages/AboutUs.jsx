@@ -30,19 +30,16 @@ const AboutUs = () => {
             </div>
 
             {/* Total clients */}
-            <div ref={ref} className="mt-6 lg:mt-12">
+            <div ref={ref} className="mt-6 lg:mt-12 ">
               {visible && (
-                <span className="text-xl font-medium text-gray-800 uppercase dark:text-gray-200">
-                  total number of clients:
-                  {/* react counter */}
-                  <CountUp
-                    className="text-[#6394C6] text-3xl"
-                    delay={0.5}
-                    end={1000}
-                    duration={5}
-                  />{" "}
-                  pluse
-                </span>
+                <>
+                  <span className="text-xl text-gray-800 font-bold">
+                    Total number of clients:{" "}
+                  </span>
+                  <p className="mt-2 sm:mt-3 text-xl sm:text-2xl font-bold text-[#4C96DF] inline">
+                    <CountUp end={1000} delay={0.5} duration={4} suffix="+" />
+                  </p>
+                </>
               )}
             </div>
             {/* <!-- End Brands --> */}
