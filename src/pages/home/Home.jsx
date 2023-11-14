@@ -6,6 +6,8 @@ import ExcluServices from "../ExcluServices";
 import OurTeam from "../OurTeam";
 import OurPortfolio from "../OurPortfolio";
 import Testimonials from "../Testimonials";
+import ContactUs from "../ContactUs";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <OurTeam />
       <OurPortfolio />
       <Testimonials />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };

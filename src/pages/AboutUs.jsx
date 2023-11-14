@@ -33,7 +33,7 @@ const AboutUs = () => {
             <div ref={ref} className="mt-6 lg:mt-12 ">
               {visible && (
                 <>
-                  <span className="text-xl text-gray-800 font-bold">
+                  <span className="text-xl text-gray-800 font-bold dark:text-gray-200">
                     Total number of clients:{" "}
                   </span>
                   <p className="mt-2 sm:mt-3 text-xl sm:text-2xl font-bold text-[#4C96DF] inline">

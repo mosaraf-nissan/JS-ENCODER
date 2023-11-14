@@ -7,7 +7,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Josh Tyson",
-      img: "/gabriel.png",
+      img: "/josh.png",
       desig: "Business Entrepreneur",
       says: "In September, I will be using this theme for 2 years. I went through multiple updates and changes and I'm very glad to see the consistency and effort made by the team.",
     },
@@ -45,7 +45,7 @@ const Testimonials = () => {
   return (
     <div>
       {/* <!-- Testimonials --> */}
-      <div className="overflow-hidden bg-slate-800 mt-10 transition-all duration-300">
+      <div className="overflow-hidden bg-slate-800 bg-[url(/bg.png)] bg-fixed bg-cover bg-blend-soft-light mt-10 transition-all duration-300">
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           {/* <!-- Title --> */}
           <div className="  mb-6 sm:mb-10 md:mb-16 text-center">
