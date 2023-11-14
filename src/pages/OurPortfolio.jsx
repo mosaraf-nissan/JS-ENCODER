@@ -57,7 +57,7 @@ const OurPortfolio = () => {
             Portfolio
           </span>
         </h2>
-        <p className="text-gray-800 py-8 dark:text-gray-300">
+        <p className="text-gray-800 pt-1 pb-8 dark:text-gray-300 p-2 text-center ">
           We work for customer satisfaction and happiness! We have done it over
           and over again. Look through our many web design and development
           projects and feel the vibe in you. Our hard work and expertise drove

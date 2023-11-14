@@ -65,11 +65,12 @@ const OurTeam = () => {
             <span className="bg-clip-text bg-gradient-to-l from-[#6394C6] to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
               Experience
             </span>{" "}
+            <br />
             Team Member
           </h3>
         </div>
         <div>
-          <p className="dark:text-gray-400 pt-2">
+          <p className="dark:text-gray-400 p-1 pt-2">
             Join us and showcase your talent. We value and compensate talented
             members who are eager to join our team. We&apos;re here for you.
           </p>
