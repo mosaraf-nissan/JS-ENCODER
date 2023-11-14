@@ -8,6 +8,7 @@ import OurPortfolio from "../OurPortfolio";
 import Testimonials from "../Testimonials";
 import ContactUs from "../ContactUs";
 import Footer from "../Footer";
+import ScrollTopButton from "../../components/ScrollTopButton";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Testimonials />
       <ContactUs />
       <Footer />
+      <ScrollTopButton />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import GoogleMap from "../components/GoogleMap";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div id="contact">
       {/* <!-- Contact Us --> */}
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl lg:max-w-5xl mx-auto">

@@ -54,7 +54,7 @@ const OurTeam = () => {
     },
   ];
   return (
-    <div className="max-w-[85rem] mx-auto">
+    <div id="ourteam" className="max-w-[85rem] mx-auto">
       <div className="text-center py-10">
         <div>
           <p className="text-md bg-clip-text bg-gradient-to-l from-orange-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">

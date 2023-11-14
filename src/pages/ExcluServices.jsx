@@ -49,7 +49,10 @@ const ExcluServices = () => {
     },
   ];
   return (
-    <div className=" pt-14 bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#1D283A]">
+    <div
+      id="service"
+      className=" pt-14 bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#1D283A]"
+    >
       <div>
         <p className="text-center text-sm font-medium bg-clip-text bg-gradient-to-l from-orange-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
           WHAT WE DO

@@ -13,7 +13,7 @@ import Button from "./Button";
 const Hero = () => {
   return (
     // <!-- Hero -->
-    <div className="relative overflow-hidden">
+    <div id="home" className="relative overflow-hidden">
       {/* <!-- Gradients --> */}
       <div
         aria-hidden="true"

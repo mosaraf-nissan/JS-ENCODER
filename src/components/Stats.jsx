@@ -4,7 +4,7 @@ import useOnScreen from "../hooks/useOnScreen";
 
 const Stats = () => {
   // custom hook
-  const [ref, visible] = useOnScreen({ rootMargin: "0px" });
+  const [ref, visible] = useOnScreen({ rootMargin: "-10px" });
   return (
     <div>
       <div className="mt-20 grid gap-6 grid-cols-2 sm:gap-12 lg:grid-cols-3 lg:gap-8">

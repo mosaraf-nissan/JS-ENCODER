@@ -17,16 +17,93 @@ const Navbar = () => {
     }
   }, [isDarkMode]);
 
+  // Scrollingto the section
+  const scrollToSection = (section) => {
+    const home = document.getElementById(section);
+    const aboutUs = document.getElementById(section);
+    // aboutButton for active
+    const aboutBt = document.getElementById("aboutBt");
+    // careerButton
+    const careerBt = document.getElementById("careerBt");
+    // contactButton
+    const contactBt = document.getElementById("contactBt");
+    const services = document.getElementById(section);
+    const career = document.getElementById(section);
+    const contact = document.getElementById(section);
+
+    // Check which section is clicked and scroll to that section
+    if (section === "home" && home) {
+      home.scrollIntoView({ behavior: "smooth", block: "start" });
+      aboutBt.classList.remove("border-b-4");
+      aboutBt.classList.remove("border-b-orange-500");
+      careerBt.classList.remove("border-b-4");
+      careerBt.classList.remove("border-b-orange-500");
+      contactBt.classList.remove("border-b-4");
+      contactBt.classList.remove("border-b-orange-500");
+    }
+
+    if (section === "aboutus" && aboutUs) {
+      // remove others active button
+      careerBt.classList.remove("border-b-4");
+      careerBt.classList.remove("border-b-orange-500");
+      contactBt.classList.remove("border-b-4");
+      contactBt.classList.remove("border-b-orange-500");
+      aboutUs.scrollIntoView({ behavior: "smooth", block: "center" });
+      // add active button
+      aboutBt.classList.add("border-b-4");
+      aboutBt.classList.add("border-b-orange-500");
+    }
+    //service section
+    else if (section === "service" && services) {
+      services.scrollIntoView({ behavior: "smooth" }, true);
+      // remove all active button
+      aboutBt.classList.remove("border-b-4");
+      aboutBt.classList.remove("border-b-orange-500");
+      careerBt.classList.remove("border-b-4");
+      careerBt.classList.remove("border-b-orange-500");
+      contactBt.classList.remove("border-b-4");
+      contactBt.classList.remove("border-b-orange-500");
+    }
+    // career section
+    else if (section === "ourteam" && career) {
+      // add active button
+      careerBt.classList.add("border-b-4");
+      careerBt.classList.add("border-b-orange-500");
+      // remove active button other's
+      aboutBt.classList.remove("border-b-4");
+      aboutBt.classList.remove("border-b-orange-500");
+      contactBt.classList.remove("border-b-4");
+      contactBt.classList.remove("border-b-orange-500");
+      // scroll to the section
+      career.scrollIntoView({ behavior: "smooth" }, true);
+    }
+    // contact section
+    else if (section === "contact" && contact) {
+      // add active button
+      contactBt.classList.add("border-b-4");
+      contactBt.classList.add("border-b-orange-500");
+      contact.scrollIntoView({ behavior: "smooth" }, true);
+      // remove others active button
+      aboutBt.classList.remove("border-b-4");
+      aboutBt.classList.remove("border-b-orange-500");
+      careerBt.classList.remove("border-b-4");
+      careerBt.classList.remove("border-b-orange-500");
+    }
+  };
+
   return (
-    <header className="sticky top-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 border-b border-gray-200 text-sm py-3 sm:py-0  dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 dark:border-0">
+    <header className="sticky top-0  flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full  bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 border-b border-gray-200 text-sm py-3 sm:py-0  dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 dark:border-0">
       <nav
         className="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-0"
         aria-label="Global"
       >
         <div className="flex items-center justify-between">
-          <Link
-            className="animationLogo w-52 flex-none text-xl font-semibold dark:text-white"
-            href="#"
+          <p
+            id="homeBt"
+            onClick={() => {
+              scrollToSection("home");
+            }}
+            className="cursor-pointer animationLogo w-52 flex-none text-xl font-semibold dark:text-white"
             aria-label="logo"
           >
             {/* JS Encoder Logo */}
@@ -35,7 +112,7 @@ const Navbar = () => {
               src="/jsencoderLogo.png"
               alt="JsEncoderLogo"
             />
-          </Link>
+          </p>
           {/* burger menu and close */}
           <div className="sm:hidden">
             <button
@@ -74,13 +151,16 @@ const Navbar = () => {
           className="hs-collapse hidden text-lg font-semibold overflow-hidden transition-all duration-300 basis-full grow sm:block"
         >
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:ps-7">
-            <a
-              className=" text-gray-500 hover:text-gray-400  dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
+            <p
+              id="aboutBt"
+              onClick={() => {
+                scrollToSection("aboutus");
+              }}
+              className="cursor-pointer text-gray-500 hover:text-gray-400  dark:text-gray-400 dark:hover:text-gray-500"
               aria-current="page"
             >
               About
-            </a>
+            </p>
             {/* service dropdown */}
             <div className="hs-dropdown [--strategy:static] sm:[--strategy:fixed] [--adaptive:none] sm:[--trigger:hover] sm:py-4">
               <button
@@ -107,41 +187,56 @@ const Navbar = () => {
               {/* services list in dropdown */}
               <div className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-50 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:start-0 before:w-full before:h-5">
                 <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  id="serviceBt"
+                  onClick={() => {
+                    scrollToSection("service");
+                  }}
+                  className="cursor-pointer flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 >
                   Web Development
                 </a>
 
                 <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  onClick={() => {
+                    scrollToSection("service");
+                  }}
+                  className="cursor-pointer flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 >
                   App Development
                 </a>
                 <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  onClick={() => {
+                    scrollToSection("service");
+                  }}
+                  className="cursor-pointer flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 >
                   Web Hosting
                 </a>
                 <a
-                  className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  onClick={() => {
+                    scrollToSection("service");
+                  }}
+                  className="cursor-pointer flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 >
                   SEO
                 </a>
               </div>
             </div>
-            <a
-              className=" text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
+            <p
+              id="careerBt"
+              onClick={() => {
+                scrollToSection("ourteam");
+              }}
+              className="cursor-pointer text-gray-500 hover:text-gray-400  dark:text-gray-400 dark:hover:text-gray-500"
             >
               Career
-            </a>
+            </p>
             <a
-              className=" text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
+              id="contactBt"
+              onClick={() => {
+                scrollToSection("contact");
+              }}
+              className="cursor-pointer text-gray-500 hover:text-gray-400  dark:text-gray-400 dark:hover:text-gray-500"
             >
               Contact
             </a>
@@ -150,7 +245,6 @@ const Navbar = () => {
               <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 className="font-medium text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#"
               >
                 <BsFillSunFill />
               </button>
@@ -158,7 +252,6 @@ const Navbar = () => {
               <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
                 className="font-medium text-gray-700 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500"
-                href="#"
               >
                 <BsMoonStarsFill />
               </button>

@@ -14,7 +14,7 @@ const Footer = () => {
               aria-label="Brand"
             >
               <img
-                className="w-24 h-24 filter grayscale"
+                className="w-24 h-24 ml-3 filter grayscale"
                 style={{
                   filter:
                     "saturate(0%) grayscale(100%) sepia(30%) hue-rotate(180deg)",
@@ -37,7 +37,7 @@ const Footer = () => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Web Development
@@ -45,7 +45,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   App Development
@@ -53,7 +53,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Web Hosting
@@ -61,7 +61,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   SEO
@@ -79,7 +79,7 @@ const Footer = () => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   About us
@@ -87,7 +87,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Contact
@@ -95,7 +95,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Careers
@@ -106,7 +106,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Sitemap
@@ -124,7 +124,7 @@ const Footer = () => {
             <div className="mt-3 grid space-y-3 text-sm">
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Terms of use
@@ -132,7 +132,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Privacy policy
@@ -140,7 +140,7 @@ const Footer = () => {
               </p>
               <p>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Cookie policy
@@ -360,19 +360,19 @@ const Footer = () => {
 
               <div className="space-x-4 text-sm ms-4">
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Terms
                 </a>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Privacy
                 </a>
                 <a
-                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#"
                 >
                   Status
@@ -387,7 +387,15 @@ const Footer = () => {
                   href="#"
                   aria-label="Brand"
                 >
-                  Brand
+                  <img
+                    className="w-10 h-10 ml-3 filter grayscale"
+                    style={{
+                      filter:
+                        "saturate(0%) grayscale(100%) sepia(30%) hue-rotate(180deg)",
+                    }}
+                    src="/jsLogo.png"
+                    alt=""
+                  />
                 </a>
                 <p className="mt-1 text-xs sm:text-sm text-gray-400 dark:text-gray-400">
                   © 2022 Preline.
@@ -397,7 +405,7 @@ const Footer = () => {
               {/* <!-- Social Brands --> */}
               <div className="space-x-4">
                 <a
-                  className="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-400"
+                  className="inline-block text-gray-500 hover:text-gray-600 dark:hover:text-gray-400"
                   href="#"
                 >
                   <svg
@@ -412,7 +420,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  className="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-400"
+                  className="inline-block text-gray-500 hover:text-gray-600 dark:hover:text-gray-400"
                   href="#"
                 >
                   <svg
@@ -427,7 +435,7 @@ const Footer = () => {
                   </svg>
                 </a>
                 <a
-                  className="inline-block text-gray-500 hover:text-gray-800 dark:hover:text-gray-400"
+                  className="inline-block text-gray-500 hover:text-gray-600 dark:hover:text-gray-400"
                   href="#"
                 >
                   <svg
