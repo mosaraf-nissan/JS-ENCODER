@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-span-full hidden lg:col-span-1 lg:block">
             <a
               className="flex-none text-xl font-semibold dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-              href="#"
+              href="#home"
               aria-label="Brand"
             >
               <img
@@ -38,7 +38,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#service"
                 >
                   Web Development
                 </a>
@@ -46,7 +46,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#service"
                 >
                   App Development
                 </a>
@@ -54,7 +54,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#service"
                 >
                   Web Hosting
                 </a>
@@ -62,7 +62,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#service"
                 >
                   SEO
                 </a>
@@ -80,7 +80,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#aboutus"
                 >
                   About us
                 </a>
@@ -88,7 +88,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#contact"
                 >
                   Contact
                 </a>
@@ -96,7 +96,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#ourteam"
                 >
                   Careers
                 </a>{" "}
@@ -107,7 +107,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#contact"
                 >
                   Sitemap
                 </a>
@@ -125,7 +125,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#home"
                 >
                   Terms of use
                 </a>
@@ -133,7 +133,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#home"
                 >
                   Privacy policy
                 </a>
@@ -141,7 +141,7 @@ const Footer = () => {
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                  href="#"
+                  href="#home"
                 >
                   Cookie policy
                 </a>
@@ -218,7 +218,7 @@ const Footer = () => {
                 >
                   <a
                     className="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                    href="#"
+                    href="#home"
                   >
                     <svg
                       className="flex-shrink-0 w-3.5 h-3.5 rounded-full"
@@ -255,7 +255,7 @@ const Footer = () => {
                   </a>
                   <a
                     className="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                    href="#"
+                    href="#home"
                   >
                     <svg
                       className="w-3 h-3 rounded-full"
@@ -271,7 +271,7 @@ const Footer = () => {
                   </a>
                   <a
                     className="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                    href="#"
+                    href="#home"
                   >
                     <svg
                       className="w-3 h-3 rounded-full"

@@ -33,7 +33,7 @@ const Navbar = () => {
 
     // Check which section is clicked and scroll to that section
     if (section === "home" && home) {
-      home.scrollIntoView({ behavior: "smooth", block: "start" });
+      home.scrollIntoView({ behavior: "smooth" }, true);
       aboutBt.classList.remove("border-b-4");
       aboutBt.classList.remove("border-b-orange-500");
       careerBt.classList.remove("border-b-4");
