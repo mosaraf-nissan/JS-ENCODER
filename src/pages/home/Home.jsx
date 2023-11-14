@@ -4,6 +4,7 @@ import HeroFooter from "../../components/HeroFooter";
 import AboutUs from "../AboutUs";
 import ExcluServices from "../ExcluServices";
 import OurTeam from "../OurTeam";
+import OurPortfolio from "../OurPortfolio";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <AboutUs />
       <ExcluServices />
       <OurTeam />
+      <OurPortfolio />
     </div>
   );
 };

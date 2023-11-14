@@ -61,7 +61,11 @@ const OurTeam = () => {
             Our Team
           </p>
           <h3 className=" md:text-5xl font-bold dark:text-white">
-            Meet Our Experience Team Member
+            Meet Our{" "}
+            <span className="bg-clip-text bg-gradient-to-l from-[#6394C6] to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+              Experience
+            </span>{" "}
+            Team Member
           </h3>
         </div>
         <div>
@@ -69,11 +73,10 @@ const OurTeam = () => {
             Join us and showcase your talent. We value and compensate talented
             members who are eager to join our team. We&apos;re here for you.
           </p>
-
           <Button>Join With Us</Button>
         </div>
       </div>
-      <div className="max-w-[60rem] mx-auto grid  lg:grid-cols-4 gap-6">
+      <div className="max-w-[60rem] mx-auto grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 gap-6">
         {teamMembers.map((team) => (
           <ProfileCard key={team.id} team={team} />
         ))}

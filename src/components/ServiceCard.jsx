@@ -2,14 +2,7 @@ import React, { useState } from "react";
 import ReadMore from "./ReadMore";
 
 const ServiceCard = ({ service }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const handleReadMoreClick = () => {
-    setIsExpanded(!isExpanded);
-  };
   const { title, desc } = service;
-  const cardClassName = `transition-all duration-500 ${
-    isExpanded ? "h-auto" : "h-full"
-  }`;
 
   return (
     <div>
@@ -19,9 +12,7 @@ const ServiceCard = ({ service }) => {
           src={service.img}
           alt="Image Description"
         />
-        <div
-          className={`p-4 md:p-5 transition-all duration-500 ${cardClassName}`}
-        >
+        <div className="p-4 md:p-5 transition-all duration-500">
           <h3 className="text-lg font-bold text-gray-800 dark:text-white">
             {title}
           </h3>
