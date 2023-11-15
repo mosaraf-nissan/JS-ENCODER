@@ -6,7 +6,7 @@ import { BiSupport } from "react-icons/bi";
 const HeroFooter = () => {
   return (
     <div className="bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#131C2F] pb-10">
-      <div className="bg-gradient-to-r from-[#4c96df] via-[#2f74a8] to-[#2a71a7] dark:from-slate-500 max-w-[1280px] mx-auto p-3">
+      <div className="bg-gradient-to-r from-[#004AAD] via-[#2f74a8] to-[#004AAD] dark:from-slate-500 max-w-[1280px] mx-auto p-3">
         <div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-10 text-xl font-bold text-white">
             <div className="flex flex-col justify-center items-center border rounded-md  p-2">

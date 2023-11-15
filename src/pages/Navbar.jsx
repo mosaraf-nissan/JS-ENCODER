@@ -45,35 +45,35 @@ const Navbar = () => {
     if (section === "aboutus" && aboutUs) {
       // remove others active button
       careerBt.classList.remove("border-b-4");
-      careerBt.classList.remove("border-b-orange-500");
+      careerBt.classList.remove("border-b-[#004AAD]");
       contactBt.classList.remove("border-b-4");
-      contactBt.classList.remove("border-b-orange-500");
+      contactBt.classList.remove("border-b-[#004AAD]");
       aboutUs.scrollIntoView({ behavior: "smooth", block: "center" });
       // add active button
       aboutBt.classList.add("border-b-4");
-      aboutBt.classList.add("border-b-orange-500");
+      aboutBt.classList.add("border-b-[#004AAD]");
     }
     //service section
     else if (section === "service" && services) {
       services.scrollIntoView({ behavior: "smooth" }, true);
       // remove all active button
       aboutBt.classList.remove("border-b-4");
-      aboutBt.classList.remove("border-b-orange-500");
+      aboutBt.classList.remove("border-b-[#004AAD]");
       careerBt.classList.remove("border-b-4");
-      careerBt.classList.remove("border-b-orange-500");
+      careerBt.classList.remove("border-b-[#004AAD]");
       contactBt.classList.remove("border-b-4");
-      contactBt.classList.remove("border-b-orange-500");
+      contactBt.classList.remove("border-b-[#004AAD]");
     }
     // career section
     else if (section === "ourteam" && career) {
       // add active button
       careerBt.classList.add("border-b-4");
-      careerBt.classList.add("border-b-orange-500");
+      careerBt.classList.add("border-b-[#004AAD]");
       // remove active button other's
       aboutBt.classList.remove("border-b-4");
-      aboutBt.classList.remove("border-b-orange-500");
+      aboutBt.classList.remove("border-b-[#004AAD]");
       contactBt.classList.remove("border-b-4");
-      contactBt.classList.remove("border-b-orange-500");
+      contactBt.classList.remove("border-b-[#004AAD]");
       // scroll to the section
       career.scrollIntoView({ behavior: "smooth" }, true);
     }
@@ -81,13 +81,13 @@ const Navbar = () => {
     else if (section === "contact" && contact) {
       // add active button
       contactBt.classList.add("border-b-4");
-      contactBt.classList.add("border-b-orange-500");
+      contactBt.classList.add("border-b-[#004AAD]");
       contact.scrollIntoView({ behavior: "smooth" }, true);
       // remove others active button
       aboutBt.classList.remove("border-b-4");
-      aboutBt.classList.remove("border-b-orange-500");
+      aboutBt.classList.remove("border-b-[#004AAD]");
       careerBt.classList.remove("border-b-4");
-      careerBt.classList.remove("border-b-orange-500");
+      careerBt.classList.remove("border-b-[#004AAD]");
     }
   };
 

@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import React from "react";
 // lottie animation
-import heroAnimation from "../assets/lottie/Animation - 1699699047899.json";
+import heroAnimation from "../assets/lottie/Animation - 1700073972816.json";
 
 // react-icon
 import { AiOutlineRight } from "react-icons/ai";

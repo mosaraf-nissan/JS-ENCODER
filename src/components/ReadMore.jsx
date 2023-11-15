@@ -14,7 +14,7 @@ const ReadMore = ({ text, maxLength }) => {
       {text.length > maxLength && (
         <button
           onClick={toggleReadMore}
-          className="  px-2 mt-5 bg-[#4c96df] rounded-md text-white hover:underline inline"
+          className="  px-2 mt-5 bg-[#004AAD] rounded-md text-white hover:underline inline"
         >
           {isTruncated ? "...Read More" : "Read Less"}
         </button>

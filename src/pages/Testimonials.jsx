@@ -12,12 +12,6 @@ const Testimonials = () => {
       says: "In September, I will be using this theme for 2 years. I went through multiple updates and changes and I'm very glad to see the consistency and effort made by the team.",
     },
     {
-      name: "Jean-Gabriel",
-      img: "/gabriel.png",
-      desig: "Business Entrepreneur",
-      says: "Very professional work. Work ethics are very appreciable",
-    },
-    {
       name: "Gaspard Monot",
       img: "/gaspard.png",
       desig: "Entrepreneur",
@@ -39,7 +33,13 @@ const Testimonials = () => {
       name: "Daniel Nguyen",
       img: "/daniel.png",
       desig: "Entrepreneur",
-      says: "Amazing service, One of the most reliable team I have met",
+      says: "An enthusiastic and dependable team, consistently delivering reliable and outstanding service.",
+    },
+    {
+      name: "Jean-Gabriel",
+      img: "/gabriel.png",
+      desig: "Business Entrepreneur",
+      says: "Very professional work. Work ethics are very appreciable",
     },
   ];
 

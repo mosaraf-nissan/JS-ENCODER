@@ -74,7 +74,7 @@ const OurTeam = () => {
             Join us and showcase your talent. We value and compensate talented
             members who are eager to join our team. We&apos;re here for you.
           </p>
-          <Button title="Send Cv" link="mailto:info@jsencoder.com">
+          <Button title="Send Cv" link="mailto:career@jsencoder.com">
             Join With Us
           </Button>
         </div>

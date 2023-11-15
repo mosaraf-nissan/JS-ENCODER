@@ -3,10 +3,10 @@ import React from "react";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div>
-      <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto bg-slate-900 text-wite rounded-md dark:bg-slate-800 dark:border dark:border-gray-600">
+    <div className="bg-slate-900 text-wite rounded-md dark:bg-slate-800 dark:border dark:border-gray-600">
+      <footer className="w-full max-w-[80rem] mx-auto  py-10 px-4 sm:px-6 lg:px-8 ">
         {/* <!-- Grid --> */}
-        <div className="flex justify-between md:mx-10 gap-2 md:gap-6 mb-10">
+        <div className="  flex justify-between md:mx-10 gap-2 md:gap-6 mb-10">
           <div className="col-span-full hidden lg:col-span-1 lg:block">
             <a
               className="flex-none text-xl font-semibold dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
@@ -162,7 +162,7 @@ const Footer = () => {
                 <button
                   id="footer-language-dropdown"
                   type="button"
-                  className="hs-dropdown-toggle py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                  className="hs-dropdown-toggle py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg border-gray-200 bg-slate-900 text-white shadow-sm hover:bg-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                 >
                   <svg
                     className="w-3 h-3 rounded-full"
@@ -388,7 +388,7 @@ const Footer = () => {
                   aria-label="Brand"
                 >
                   <img
-                    className="w-10 h-10 ml-3 filter grayscale"
+                    className="w-10 h-10 ml-7 filter grayscale"
                     style={{
                       filter:
                         "saturate(0%) grayscale(100%) sepia(30%) hue-rotate(180deg)",
@@ -398,7 +398,7 @@ const Footer = () => {
                   />
                 </a>
                 <p className="mt-1 text-xs sm:text-sm text-gray-400 dark:text-gray-400">
-                  © 2022 Preline.
+                  © {currentYear} JS Encoder.
                 </p>
               </div>
 
