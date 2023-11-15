@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
   const form = useRef();
@@ -16,15 +18,19 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast("Thanks for inquiry😍");
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
+          toast(`${error.text}>Something wrong!😢`);
         }
       );
   };
 
   return (
     <div>
+      <ToastContainer />
       <form ref={form} onSubmit={sendEmail}>
         <div className="grid gap-4">
           {/* <!-- Grid --> */}
@@ -59,20 +65,6 @@ const ContactForm = () => {
               required
             />
           </div>
-
-          <div>
-            <label htmlFor="hs-phone-number-1" className="sr-only">
-              Phone Number
-            </label>
-            <input
-              type="text"
-              name="hs-phone-number-1"
-              id="hs-phone-number-1"
-              className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Phone Number"
-            />
-          </div>
-
           <div>
             <label htmlFor="hs-about-contacts-1" className="sr-only">
               Details
@@ -82,7 +74,7 @@ const ContactForm = () => {
               name="message"
               rows="4"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-              placeholder="Details"
+              placeholder="Add Details with phone number"
               required
             ></textarea>
           </div>

@@ -19,10 +19,10 @@ const ContactUs = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
+          <div className="mt-12  grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
             {/* <!-- Card --> */}
-            <div className="max-w-[30rem] bg-gray-200 flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700 dark:bg-slate-800">
-              <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-600">
+            <div className="max-w-[35rem] h-[100%] bg-gray-200 flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700 dark:bg-slate-800">
+              <h2 className="text-center font-bold text-xl text-gray-800 dark:text-gray-100 mb-24">
                 Fill in the form
               </h2>
               <ContactForm />

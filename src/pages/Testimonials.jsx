@@ -50,7 +50,7 @@ const Testimonials = () => {
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           {/* <!-- Title --> */}
           <div className="  mb-6 sm:mb-10 md:mb-16 text-center">
-            <p className="text-md bg-clip-text bg-gradient-to-l from-orange-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+            <p className="text-md font-bold bg-clip-text bg-gradient-to-l from-orange-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
               Testimonial
             </p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl text-white font-semibold">

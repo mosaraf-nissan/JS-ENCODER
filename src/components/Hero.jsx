@@ -66,7 +66,9 @@ const Hero = () => {
             </div>
 
             {/* <!-- Buttons --> */}
-            <Button>Get Quote</Button>
+            <Button title="Send Message?" link="#contact">
+              Get Quote
+            </Button>
 
             {/* <!-- End Buttons --> */}
           </div>

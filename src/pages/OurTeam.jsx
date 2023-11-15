@@ -74,7 +74,9 @@ const OurTeam = () => {
             Join us and showcase your talent. We value and compensate talented
             members who are eager to join our team. We&apos;re here for you.
           </p>
-          <Button>Join With Us</Button>
+          <Button title="Send Cv" link="mailto:info@jsencoder.com">
+            Join With Us
+          </Button>
         </div>
       </div>
       <div className="max-w-[60rem] mx-auto grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 gap-6">

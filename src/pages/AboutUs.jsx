@@ -29,7 +29,7 @@ const AboutUs = () => {
             </p>
 
             <div className="mt- lg:mt- flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
-              <Button>Contact Us</Button>
+              <Button link="#contact">Contact Us</Button>
             </div>
 
             {/* Total clients */}
