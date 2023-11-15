@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { MdEmail } from "react-icons/md";
 
 // react icons for dark and light
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
@@ -239,6 +239,14 @@ const Navbar = () => {
               className="cursor-pointer text-gray-500 hover:text-gray-400  dark:text-gray-400 dark:hover:text-gray-500"
             >
               Contact
+            </a>
+            <a
+              href="https://jsencoder.com/webmail/"
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer text-gray-800 hover:text-gray-400  dark:text-gray-400 dark:hover:text-gray-500"
+            >
+              <MdEmail className="text-xl" />
             </a>
             {/* todo darkMode toggle */}
             {isDarkMode ? (
