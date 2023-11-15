@@ -30,9 +30,9 @@ const Testimonials = () => {
       says: "Had a very long term work relation with the team. Never disappointed with the quality of the work",
     },
     {
-      name: "Amazing service, One of the most reliable team I have met",
+      name: "Takura",
       img: "/tukura.png",
-      desig: "Entrepreneur",
+      desig: "Super Shop Owner",
       says: "Amazing service, One of the most reliable team I have met",
     },
     {
@@ -42,6 +42,7 @@ const Testimonials = () => {
       says: "Amazing service, One of the most reliable team I have met",
     },
   ];
+
   return (
     <div>
       {/* <!-- Testimonials --> */}

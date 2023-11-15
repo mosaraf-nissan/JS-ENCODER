@@ -1,35 +1,45 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_zah17cs",
+        "template_r5gixbu",
+        form.current,
+        "1WdlL2cTdgo7zX2s5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div className="grid gap-4">
           {/* <!-- Grid --> */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4">
             <div>
               <label htmlFor="hs-firstname-contacts-1" className="sr-only">
-                First Name
+                Name
               </label>
               <input
                 type="text"
-                name="hs-firstname-contacts-1"
+                name="from_name"
                 id="hs-firstname-contacts-1"
                 className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                placeholder="First Name"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="hs-lastname-contacts-1" className="sr-only">
-                Last Name
-              </label>
-              <input
-                type="text"
-                name="hs-lastname-contacts-1"
-                id="hs-lastname-contacts-1"
-                className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                placeholder="Last Name"
+                placeholder="Name"
+                required
               />
             </div>
           </div>
@@ -41,11 +51,12 @@ const ContactForm = () => {
             </label>
             <input
               type="email"
-              name="hs-email-contacts-1"
+              name="from_email"
               id="hs-email-contacts-1"
               autoComplete="email"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
               placeholder="Email"
+              required
             />
           </div>
 
@@ -68,10 +79,11 @@ const ContactForm = () => {
             </label>
             <textarea
               id="hs-about-contacts-1"
-              name="hs-about-contacts-1"
+              name="message"
               rows="4"
               className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
               placeholder="Details"
+              required
             ></textarea>
           </div>
         </div>
