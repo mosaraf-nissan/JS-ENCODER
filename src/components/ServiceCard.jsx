@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div>
-      <div className="flex flex-col bg-white border shadow-md shadow-orange-600 rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+      <div className="flex flex-col bg-white border shadow-md shadow-black rounded-xl dark:bg-black/40 dark:border-gray-700 dark:shadow-slate-700/[.7]">
         <img
           className="w-full h-auto rounded-t-xl"
           src={service.img}

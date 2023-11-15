@@ -59,7 +59,7 @@ const Hero = () => {
             {/* <!-- End Title --> */}
 
             <div className="mt-5 max-w-3xl">
-              <p className="text-lg text-gray-600 dark:text-gray-400">
+              <p className="text-lg text-gray-600 dark:text-gray-400 mb-5">
                 Design your website with the best web developers in Bangladesh.
                 Our Developers have almost 10 years experiences in this field.
               </p>

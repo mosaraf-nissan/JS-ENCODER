@@ -4,7 +4,7 @@ import "./profilecard.css";
 const ProfileCard = ({ team }) => {
   return (
     <div className="mx-auto">
-      <div className="card-client dark:bg-[#0F172A] dark:border-0 h-full">
+      <div className="card-client dark:bg-white/5 dark:border-0 h-full">
         <div className="user-picture">
           <img src={team.img} alt="" />
         </div>

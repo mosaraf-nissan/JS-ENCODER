@@ -18,9 +18,9 @@ const AboutUs = () => {
             <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-5xl dark:text-white">
               About JS Encoder
             </h1>
-            <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">
-              JSEncoder provides online marketing campaigns across the key areas
-              of Web Development, App Development, SEO etc. We started our
+            <p className="mt-3 mb-2 text-lg text-gray-800 dark:text-gray-400">
+              JS Encoder provides online marketing campaigns across the key
+              areas of Web Development, App Development, SEO etc. We started our
               official December in 2022 with a focus on small online business.
               we try to evolved as a large online marketing firm. Now, we at
               JSEncoder, provides various internet marketing services for small
@@ -51,13 +51,13 @@ const AboutUs = () => {
 
           <div className="lg:col-span-4 mt-10 lg:mt-0">
             <div className="flex justify-center items-center mt-10 lg:mt-0 gap-2 lg:gap-4 flex-col lg:flex-row ">
-              <div className="max-w-96 h-96 bg-[#004AAD] p-2 rounded-xl ">
-                <div className="max-w-96 h-96 bg-cyan-50 border-4 rounded-xl shadow-md shadow-orange-400 p-2 flex flex-col justify-center items-center -mt-14">
+              <div className="max-w-96 h-96 bg-[#004AAD] p-2 rounded-xl dark:bg-slate-900">
+                <div className="max-w-96  h-96 bg-cyan-50 border-4 rounded-xl shadow-md shadow-black/50 p-2 flex flex-col justify-center items-center mt-8 dark:bg-white/5 dark:backdrop-blur-lg dark:shadow-xl dark:shadow-white/2 dark:border-0 dark:text-white">
                   <h3 className="text-2xl font-bold mb-5">
                     We are JS <span className="text-[#6394C6]">Encoder</span>
                   </h3>
                   <p>
-                    We are the people who eat, drink, sleep and play with SE0
+                    We are the people who eat, drink, sleep and play with SEO
                     and development. We don&apos;t do work for money, we love
                     this work and that&apos;s why we earn money. We love to work
                     collaboratively with our clients to ensure that the
@@ -65,8 +65,8 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="max-w-96 h-96 bg-[#004AAD] p-2 rounded-xl ">
-                <div className="max-w-96 h-96 mt-10  bg-cyan-50 border-4 rounded-xl shadow-md shadow-orange-400 p-2 flex flex-col justify-center items-center">
+              <div className="max-w-96 h-96 bg-[#004AAD] p-2 rounded-xl dark:bg-slate-900 ">
+                <div className="max-w-96 h-96 bg-cyan-50 border-4 rounded-xl shadow-md shadow-black/50 p-2 flex flex-col justify-center items-center -mt-12 dark:bg-white/5 dark:backdrop-blur-lg dark:shadow-xl dark:shadow-white/2 dark:border-0 dark:text-white">
                   <h3 className="text-2xl font-bold mb-5">
                     How We <span className="text-[#4c96df]">Formed</span>
                   </h3>

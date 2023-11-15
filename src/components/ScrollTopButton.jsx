@@ -39,7 +39,7 @@ const ScrollTopButton = () => {
     <div className="fixed bottom-5 right-5 ">
       <button
         onClick={scrollToTop}
-        className={`text-[#004AAD] rounded-full p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-cyan-600/30 backdrop-blur relative ${
+        className={`text-[#004AAD] rounded-full p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-cyan-100/30 backdrop-blur relative dark:text-white ${
           showButton ? "block" : "hidden"
         }`}
       >

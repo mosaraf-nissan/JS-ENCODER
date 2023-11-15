@@ -5,7 +5,7 @@ const Button = ({ children, link, title }) => {
   return (
     <div>
       {/* <!-- Buttons --> */}
-      <div title={title} className="flex  justify-center items-center mt-10">
+      <div title={title} className="flex  justify-center items-center mt-2">
         <a
           className="rounded-lg  relative w-36 h-10 cursor-pointer flex items-center border border-[#6394C6] bg-[#004AAD] group hover:bg-[#4c96df] active:bg-[#4c96df] active:border-[#6394C6]"
           href={link}

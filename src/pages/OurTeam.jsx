@@ -1,6 +1,7 @@
 import React from "react";
 import ProfileCard from "../components/ProfileCard";
 import Button from "../components/Button";
+import { FaArrowTurnDown } from "react-icons/fa6";
 
 const OurTeam = () => {
   const teamMembers = [
@@ -74,6 +75,11 @@ const OurTeam = () => {
             Join us and showcase your talent. We value and compensate talented
             members who are eager to join our team. We&apos;re here for you.
           </p>
+          <span className="font-semibold dark:text-white">
+            Send your Resume
+          </span>
+          <FaArrowTurnDown className="mx-auto text-3xl pt-1 animate-bounce dark:text-white" />
+
           <Button title="Send Cv" link="mailto:career@jsencoder.com">
             Join With Us
           </Button>

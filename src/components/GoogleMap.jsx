@@ -10,7 +10,7 @@ const EmbeddedMap = () => {
           className="absolute top-0 left-0 w-full h-full"
           frameBorder="0"
           style={{ position: "absolute", top: 0, left: 0 }}
-          allowFullScreen=""
+          allowFullScreen="true"
           aria-hidden="false"
           tabIndex="0"
         ></iframe>
