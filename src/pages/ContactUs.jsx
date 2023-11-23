@@ -36,11 +36,21 @@ const ContactUs = () => {
                 </h2>
                 <div className=" dark:text-white">
                   <p>
-                    274/4 CHETONA TOWER, MIRPUR 60 FEET ROAD, MIRPUR, DHAKA-1216
+                    5TH FLOOR CHETONA TOWER, MIRPUR 60 FEET ROAD, MIRPUR,
+                    DHAKA-1216
                   </p>
                   <p>+8801972252777</p>
                   <p>info@jsencoder.com</p>
-                  <p>hr.david@jsencoder.com (for career)</p>
+                  <a
+                    className="text-blue-700"
+                    href="mailTo:career@jsencoder.com"
+                  >
+                    {" "}
+                    career@jsencoder.com{" "}
+                    <span className="text-blue-800 font-bold animate-pulse">
+                      (For Career)
+                    </span>
+                  </a>
                 </div>
               </div>
               <GoogleMap />

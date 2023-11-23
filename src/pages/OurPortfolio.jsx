@@ -1,6 +1,8 @@
 import React from "react";
 import ServiceCard from "../components/ServiceCard";
 import ProjectCard from "../components/ProjectCard";
+import { FaArrowTurnDown } from "react-icons/fa6";
+import Button from "../components/Button";
 
 const OurPortfolio = () => {
   const projects = [
@@ -63,8 +65,23 @@ const OurPortfolio = () => {
           projects and feel the vibe in you. Our hard work and expertise drove
           us into the best web design company in Bangladesh and worldwide. We
           just don&apos;t just want to tell, we want to show you too.
+          <br />
+          <span className="font-bold">Get In Touch</span>
         </p>
+        <div className="-mt-5 pb-10">
+          <FaArrowTurnDown className="mx-auto text-3xl pt-1 animate-bounce dark:text-white" />
+
+          <div className="w-[7.5rem] mx-auto">
+            <Button
+              title="Get in Touch"
+              link="https://www.linkedin.com/company/js-encoder/"
+            >
+              LinkedIn
+            </Button>
+          </div>
+        </div>
       </div>
+
       <div className="max-w-[60rem] mx-auto grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 gap-6">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

@@ -6,7 +6,7 @@ const ProfileCard = ({ team }) => {
     <div className="mx-auto">
       <div className="card-client dark:bg-white/5 dark:border-0 h-full">
         <div className="user-picture">
-          <img src={team.img} alt="" />
+          <img className="object-cover" src={team.img} alt="" />
         </div>
         <p className="name-client">
           {" "}

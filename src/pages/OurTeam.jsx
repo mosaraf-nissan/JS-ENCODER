@@ -7,21 +7,21 @@ const OurTeam = () => {
   const teamMembers = [
     {
       id: 1,
-      img: "./david.jpg",
-      name: "Benu S.David",
-      desig: "Co-founder & HR",
+      img: "./jessan.jpg",
+      name: "Jessan Khan",
+      desig: "Co-founder & Director                         ",
     },
     {
       id: 2,
-      img: "./jessan.jpg",
-      name: "Jessan Khan",
-      desig: "Co-founder & Director",
+      img: "./david.jpg",
+      name: "Benu S.David",
+      desig: "Co-Founder, CHRM & Head of Oparetion",
     },
     {
       id: 3,
       img: "./mamun.png",
-      name: "Md Firoz Al Mamun",
-      desig: "Co-founder & Team Manager",
+      name: "Firoz Al Mamun (Sojol)",
+      desig: "Co-founder,Head Of Business Development & Oparetion Manage",
     },
     {
       id: 4,
@@ -31,27 +31,47 @@ const OurTeam = () => {
     },
     {
       id: 5,
-      img: "./basar.jpg",
-      name: "Abul Basar",
-      desig: "Web Developer",
+      img: "./rayet.png",
+      name: "Rayet Rahman",
+      desig: "Digital Marketing Expert",
     },
     {
       id: 6,
+      img: "./muksedul.jpg",
+      name: "Md Moksedul Islam",
+      desig: "Senior Frontend Developer",
+    },
+    {
+      id: 7,
+      img: "./basar.jpg",
+      name: "Abul Basar",
+      desig: "Lead Frontend Developer",
+    },
+    {
+      id: 8,
+      img: "./nissan.jpg",
+      name: "Md. M. H. Nissan",
+      desig: "Frontend Developer",
+    },
+  ];
+  const oddTeamMembers = [
+    {
+      id: 9,
       img: "./baroi.png",
       name: "Dip jit Baroi",
       desig: "Backend Developer",
     },
     {
-      id: 7,
+      id: 10,
       img: "./kaiser.png",
       name: "Shahed Kaiser",
-      desig: "Full-Stack Developer",
+      desig: "Digital Marketer & Data Analyst",
     },
     {
-      id: 8,
-      img: "./rayet.png",
-      name: "Rayet Rahman",
-      desig: "Digital Marketing Expert",
+      id: 11,
+      img: "./Arif.jpg",
+      name: "K.M. Arif-Uz-Zaman",
+      desig: "S Q A",
     },
   ];
   return (
@@ -75,7 +95,9 @@ const OurTeam = () => {
             Join us and showcase your talent. We value and compensate talented
             members who are eager to join our team. We&apos;re here for you.
           </p>
-          <span className="font-semibold dark:text-white">
+        </div>
+        <div className="w-full">
+          <span className="font-semibold w-[100%] mx-auto text-center dark:text-white">
             Send your Resume
           </span>
           <FaArrowTurnDown className="mx-auto text-3xl pt-1 animate-bounce dark:text-white" />
@@ -85,8 +107,13 @@ const OurTeam = () => {
           </Button>
         </div>
       </div>
-      <div className="max-w-[60rem] mx-auto grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 gap-6">
+      <div className="max-w-[55rem] mx-auto grid items-stretch gap-3 grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 ">
         {teamMembers.map((team) => (
+          <ProfileCard key={team.id} team={team} />
+        ))}
+      </div>
+      <div className="max-w-[40rem] pt-3 mx-auto grid items-stretch gap-3 grid-cols-1 sm:grid-cols-3  lg:grid-cols-3 ">
+        {oddTeamMembers.map((team) => (
           <ProfileCard key={team.id} team={team} />
         ))}
       </div>
