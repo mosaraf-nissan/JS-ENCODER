@@ -49,29 +49,29 @@ const OurTeam = () => {
     },
     {
       id: 8,
-      img: "./nissan.jpg",
-      name: "Md. M. H. Nissan",
-      desig: "Frontend Developer",
+      img: "./baroi.png",
+      name: "Dip jit Baroi",
+      desig: "Backend Developer",
     },
   ];
   const oddTeamMembers = [
     {
       id: 9,
-      img: "./baroi.png",
-      name: "Dip jit Baroi",
-      desig: "Backend Developer",
-    },
-    {
-      id: 10,
       img: "./kaiser.png",
       name: "Shahed Kaiser",
       desig: "Digital Marketer & Data Analyst",
     },
     {
-      id: 11,
+      id: 10,
       img: "./Arif.jpg",
       name: "K.M. Arif-Uz-Zaman",
       desig: "S Q A",
+    },
+    {
+      id: 11,
+      img: "./nissan.jpg",
+      name: "Md. M. H. Nissan",
+      desig: "Frontend Developer",
     },
   ];
   return (
@@ -107,12 +107,12 @@ const OurTeam = () => {
           </Button>
         </div>
       </div>
-      <div className="max-w-[55rem] mx-auto grid items-stretch gap-3 grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 ">
+      <div className="max-w-[55rem] mx-auto grid items-stretch gap-6 grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 ">
         {teamMembers.map((team) => (
           <ProfileCard key={team.id} team={team} />
         ))}
       </div>
-      <div className="max-w-[40rem] pt-3 mx-auto grid items-stretch gap-3 grid-cols-1 sm:grid-cols-3  lg:grid-cols-3 ">
+      <div className="max-w-[40rem] pt-6 mx-auto grid items-stretch gap-10 grid-cols-1 sm:grid-cols-3  lg:grid-cols-3 ">
         {oddTeamMembers.map((team) => (
           <ProfileCard key={team.id} team={team} />
         ))}

@@ -10,7 +10,7 @@ const AboutUs = () => {
     <>
       <div
         id="aboutus"
-        className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#1D283A]"
+        className="max-w-[85rem] text-center md:text-start mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-tl dark:from-slate-800 dark:via-slate-800 dark:to-[#1D283A]"
       >
         {/* <!-- Grid --> */}
         <div className="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">

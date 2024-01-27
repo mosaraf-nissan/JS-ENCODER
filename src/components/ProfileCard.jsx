@@ -3,7 +3,7 @@ import "./profilecard.css";
 
 const ProfileCard = ({ team }) => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto h-80 relative">
       <div className="card-client dark:bg-white/5 dark:border-0 h-full">
         <div className="user-picture">
           <img className="object-cover" src={team.img} alt="" />
@@ -13,8 +13,8 @@ const ProfileCard = ({ team }) => {
           {team.name}
           <span>{team.desig}</span>
         </p>
-        <div className="social-media">
-          <div className="flex justify-center item">
+        <div className="social-media absolute bottom-3 w-[90%] pr-7">
+          <div className="flex justify-center item -mt-3">
             {" "}
             <a href="#">
               <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
