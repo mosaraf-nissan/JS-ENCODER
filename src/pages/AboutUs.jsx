@@ -19,13 +19,14 @@ const AboutUs = () => {
               About JS Encoder
             </h1>
             <p className="mt-3 mb-2 text-lg text-gray-800 dark:text-gray-400">
-              JS Encoder provides online marketing campaigns across the key
-              areas of Web Development, App Development, SEO etc. We started our
-              official December in 2022 with a focus on small online business.
-              we try to evolved as a large online marketing firm. Now, we at
-              JSEncoder, provides various internet marketing services for small
-              and medium-sized business to enterprise brands across the globe
-              with a great rate of success.
+              In our digital world, JS Encoder is your trusted partner for
+              crafting exceptional websites, software, and mobile applications.
+              With a decade of experience under our belt, we specialize in
+              turning ideas into reality, ensuring seamless experiences for your
+              users across all platforms. Our dedicated team is committed to
+              delivering innovative solutions that drive your business forward.
+              Partner with us and let&apos;s bring your vision to life, one line
+              of code at a time.
             </p>
 
             <div className="mt- lg:mt- flex flex-col items-center gap-2 sm:flex-row sm:gap-3">

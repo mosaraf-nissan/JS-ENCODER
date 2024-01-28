@@ -9,6 +9,7 @@ import { AiOutlineRight } from "react-icons/ai";
 // react typing import
 import { TypeAnimation } from "react-type-animation";
 import Button from "./Button";
+import ParticlesContainer from "./ParticlesContainer";
 
 const Hero = () => {
   return (
@@ -23,9 +24,11 @@ const Hero = () => {
         <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] dark:w-[110rem] dark:h-[500rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem] dark:from-slate-700 dark:via-slate-800 dark:to-slate-900 "></div>
       </div>
       {/* <!-- End Gradients --> */}
-
+      <div className="h-full absolute">
+        <ParticlesContainer />
+      </div>
       <div className="relative z-10">
-        <div className="max-w-[85rem] flex flex-col md:flex-row mx-auto justify-center items-center px-4 sm:px-6 lg:px-8 sm:mt-0 md:-mt-14">
+        <div className=" max-w-[85rem] flex flex-col md:flex-row mx-auto justify-center items-center px-4 sm:px-6 lg:px-8 sm:mt-0 md:-mt-14">
           <div className="max-w-2xl text-center mx-auto">
             <p className="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-orange-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
               JS Encoder: A Best IT Solution
@@ -49,7 +52,7 @@ const Hero = () => {
                   ]}
                   wrapper="span"
                   cursor={false} // omit the default css typing animation class
-                  className="type"
+                  className="type text-blue-500"
                   deletionSpeed={60}
                   speed={{ type: "keyStrokeDelayInMs", value: 150 }}
                   repeat={Infinity}
@@ -60,8 +63,11 @@ const Hero = () => {
 
             <div className="mt-5 max-w-3xl">
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-5">
-                Design your website with the best web developers in Bangladesh.
-                Our Developers have almost 10 years experiences in this field.
+                JS Encoder: Pioneering digital solutions for a decade,
+                empowering businesses with innovation. From web applications to
+                enterprise software, we redefine industry standards. Elevate
+                your digital presence with JS Encoder&apos;s expertise and
+                vision
               </p>
             </div>
 

@@ -9,13 +9,15 @@ const OurTeam = () => {
       id: 1,
       img: "./jessan.jpg",
       name: "Jessan Khan",
-      desig: "Co-founder & Director                         ",
+      desig: "Co-founder & Director",
+      linkedin: "https://www.linkedin.com/in/jessankhan/",
     },
     {
       id: 2,
       img: "./david.jpg",
       name: "Benu S.David",
       desig: "Co-Founder, CHRM & Head of Oparetion",
+      linkedin: "https://www.linkedin.com/in/benu-s-david-b01244279/",
     },
     {
       id: 3,
@@ -46,12 +48,14 @@ const OurTeam = () => {
       img: "./basar.jpg",
       name: "Abul Basar",
       desig: "Lead Frontend Developer",
+      linkedin: "https://www.linkedin.com/in/abulbashar5403/",
     },
     {
       id: 8,
       img: "./baroi.png",
       name: "Dip jit Baroi",
       desig: "Backend Developer",
+      linkedin: "https://www.linkedin.com/in/dip-jit-baroi-a79490263/",
     },
   ];
   const oddTeamMembers = [
@@ -66,12 +70,14 @@ const OurTeam = () => {
       img: "./Arif.jpg",
       name: "K.M. Arif-Uz-Zaman",
       desig: "S Q A",
+      linkedin: "https://www.linkedin.com/in/k-m-arif-uz-zaman/",
     },
     {
       id: 11,
       img: "./nissan.jpg",
       name: "Md. M. H. Nissan",
       desig: "Frontend Developer",
+      linkedin: "https://www.linkedin.com/in/mosaraf-nissan/",
     },
   ];
   return (

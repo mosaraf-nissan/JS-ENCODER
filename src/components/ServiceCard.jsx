@@ -5,7 +5,7 @@ const ServiceCard = ({ service }) => {
   const { title, desc } = service;
 
   return (
-    <div>
+    <div className="px-2">
       <div className="flex flex-col bg-white border shadow-md shadow-black rounded-xl dark:bg-black/40 dark:border-gray-700 dark:shadow-slate-700/[.7]">
         <img
           className="w-full h-auto rounded-t-xl"
