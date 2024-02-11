@@ -38,7 +38,7 @@ const AboutUs = () => {
             </div>
 
             {/* Total clients */}
-            <div ref={ref} className="mt-6 lg:mt-12 ">
+            {/* <div ref={ref} className="mt-6 lg:mt-12 ">
               {visible && (
                 <>
                   <span className="text-xl text-gray-800 font-bold dark:text-gray-200">
@@ -49,7 +49,7 @@ const AboutUs = () => {
                   </p>
                 </>
               )}
-            </div>
+            </div> */}
             {/* <!-- End Brands --> */}
           </div>
           {/* <!-- End Col --> */}
