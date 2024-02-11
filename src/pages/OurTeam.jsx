@@ -69,7 +69,7 @@ const OurTeam = () => {
       id: 10,
       img: "./Arif.jpg",
       name: "K.M. Arif-Uz-Zaman",
-      desig: "S Q A",
+      desig: "Software Quality Assurance",
       linkedin: "https://www.linkedin.com/in/k-m-arif-uz-zaman/",
     },
     {
