@@ -27,9 +27,9 @@ const OurTeam = () => {
     },
     {
       id: 4,
-      img: "./pradip.png",
-      name: "Pradip Sarker",
-      desig: "Technical advisor",
+      img: "./kaiser.png",
+      name: "Shahed Kaiser",
+      desig: "Digital Marketer & Data Analyst",
     },
     {
       id: 5,
@@ -41,39 +41,33 @@ const OurTeam = () => {
       id: 6,
       img: "./muksedul.jpg",
       name: "Md Moksedul Islam",
-      desig: "Senior Frontend Developer",
+      desig: "Senior Frontend Engineer",
     },
     {
       id: 7,
       img: "./basar.jpg",
       name: "Abul Basar",
-      desig: "Lead Frontend Developer",
+      desig: "Lead Frontend Engineer",
       linkedin: "https://www.linkedin.com/in/abulbashar5403/",
     },
     {
       id: 8,
       img: "./baroi.png",
       name: "Dip jit Baroi",
-      desig: "Backend Developer",
+      desig: "Backend Engineer & Floor Incharge",
       linkedin: "https://www.linkedin.com/in/dip-jit-baroi-a79490263/",
     },
   ];
   const oddTeamMembers = [
     {
       id: 9,
-      img: "./kaiser.png",
-      name: "Shahed Kaiser",
-      desig: "Digital Marketer & Data Analyst",
-    },
-    {
-      id: 10,
       img: "./Arif.jpg",
       name: "K.M. Arif-Uz-Zaman",
       desig: "Software Quality Assurance",
       linkedin: "https://www.linkedin.com/in/k-m-arif-uz-zaman/",
     },
     {
-      id: 11,
+      id: 10,
       img: "./nissan.jpg",
       name: "Md. M. H. Nissan",
       desig: "Frontend Developer",
@@ -118,7 +112,7 @@ const OurTeam = () => {
           <ProfileCard key={team.id} team={team} />
         ))}
       </div>
-      <div className="max-w-[40rem] pt-6 mx-auto grid items-stretch gap-10 grid-cols-1 sm:grid-cols-3  lg:grid-cols-3 ">
+      <div className="max-w-[27rem] pt-5 mx-auto grid items-stretch gap-5 grid-cols-1 sm:grid-cols-3  lg:grid-cols-2 ">
         {oddTeamMembers.map((team) => (
           <ProfileCard key={team.id} team={team} />
         ))}

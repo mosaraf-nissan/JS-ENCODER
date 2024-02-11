@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
 
   return (
     <div className="px-2">
-      <div className="flex flex-col bg-white border shadow-md shadow-black rounded-xl dark:bg-black/40 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+      <div className="flex h-full flex-col bg-white border shadow-md shadow-black rounded-xl dark:bg-black/40 dark:border-gray-700 dark:shadow-slate-700/[.7]">
         <img
           className="w-full h-auto rounded-t-xl"
           src={service.img}
@@ -17,7 +17,7 @@ const ServiceCard = ({ service }) => {
             {title}
           </h3>
           <p className="mt-1 text-gray-500 dark:text-gray-400">
-            <ReadMore text={desc} maxLength={100} />
+            <ReadMore text={desc} maxLength={150} />
           </p>
         </div>
       </div>

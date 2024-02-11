@@ -9,7 +9,6 @@ const Button = ({ children, link, title }) => {
         <a
           className="rounded-lg  relative w-36 h-10 cursor-pointer flex items-center border border-[#6394C6] bg-[#004AAD] group hover:bg-[#4c96df] active:bg-[#4c96df] active:border-[#6394C6]"
           href={link}
-          target="_blank"
           rel="noreferrer"
         >
           <span className="text-white overflow-hidden font-semibold pl-2 transform group-hover:translate-x-10 transition-all duration-300">

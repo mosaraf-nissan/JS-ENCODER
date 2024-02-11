@@ -41,7 +41,7 @@ const Stats = () => {
             className="mt-2 sm:mt-3 text-4xl sm:text-6xl font-bold text-blue-500"
           >
             {visible && (
-              <CountUp end={2000} delay={0.5} duration={4} suffix="+" />
+              <CountUp end={30} delay={0.5} duration={4} suffix="+" />
             )}
           </p>
           <p className="mt-1 text-gray-400"> with JS Encoder</p>

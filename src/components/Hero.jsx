@@ -41,13 +41,13 @@ const Hero = () => {
                   preRenderFirstString={true}
                   sequence={[
                     // Same substring at the start will only be typed out once, initially
-                    "Get The Best Website for Your Company",
+                    "Get The Best Web App for Your Company",
                     3000, // wait 1s before replacing "Mice" with "Hamsters"
-                    "Get The Best App for Your Company",
+                    "Get The Best Software for Your Company",
                     3000,
-                    "Get The Best Web Hosting for Your Company",
+                    "Get The Best Experience by UI/UX",
                     3000,
-                    "Get The Best SEO for Your Company",
+                    "Get The Best Quality Web and ",
                     3000,
                   ]}
                   wrapper="span"
@@ -62,12 +62,13 @@ const Hero = () => {
             {/* <!-- End Title --> */}
 
             <div className="mt-5 max-w-3xl">
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-5">
-                JS Encoder: Pioneering digital solutions for a decade,
-                empowering businesses with innovation. From web applications to
-                enterprise software, we redefine industry standards. Elevate
-                your digital presence with JS Encoder&apos;s expertise and
-                vision
+              <p className="text-lg  text-gray-900 dark:text-gray-400 mb-5">
+                <b className="font-bold">From Vision to Victory :</b> Your
+                Digital Journey Starts Here. In today&apos;s hyper-connected
+                world, standing out requires more than just a website.
+                That&apos;s where JS Encoder comes in. We&apos;re not your
+                average software company – we&apos;re your digital growth
+                hackers, your innovation engineers, your pixel-perfect partners.
               </p>
             </div>
 

@@ -82,9 +82,11 @@ const OurPortfolio = () => {
         </div>
       </div>
 
-      <div className="max-w-[60rem] mx-auto grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 gap-6">
+      <div className="max-w-fit mx-auto grid grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 gap-6">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <div key={project?.id}>
+            <ProjectCard key={project.id} project={project} />
+          </div>
         ))}
       </div>
     </div>

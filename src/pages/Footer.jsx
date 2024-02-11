@@ -51,20 +51,20 @@ const Footer = () => {
                   App Development
                 </a>
               </p>
-              <p>
+              {/* <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#service"
                 >
                   Web Hosting
                 </a>
-              </p>
+              </p> */}
               <p>
                 <a
                   className="inline-flex gap-x-2 text-gray-400 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
                   href="#service"
                 >
-                  SEO
+                  UI/Ux Design
                 </a>
               </p>
             </div>
@@ -100,7 +100,7 @@ const Footer = () => {
                 >
                   Careers
                 </a>{" "}
-                <span className="inline text-blue-600 dark:text-blue-500">
+                <span className="inline font-bold animate-pulse text-blue-600 dark:text-blue-500">
                   — We&apos;re hiring
                 </span>
               </p>
