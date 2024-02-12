@@ -11,6 +11,7 @@ const OurTeam = () => {
       name: "Jessan Khan",
       desig: "Co-founder & Director",
       linkedin: "https://www.linkedin.com/in/jessankhan/",
+      facebook: "https://www.facebook.com/profile.php?id=61554840060805",
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ const OurTeam = () => {
       name: "Benu S.David",
       desig: "Co-Founder, CHRM & Head of Oparetion",
       linkedin: "https://www.linkedin.com/in/benu-s-david-b01244279/",
+      facebook: "https://www.facebook.com/profile.php?id=61551631628414",
     },
     {
       id: 3,
@@ -107,12 +109,12 @@ const OurTeam = () => {
           </Button>
         </div>
       </div>
-      <div className="max-w-[55rem] mx-auto grid items-stretch gap-6 grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 ">
+      <div className="max-w-[58rem] mx-auto grid items-stretch gap-6 grid-cols-1 sm:grid-cols-3  lg:grid-cols-4 ">
         {teamMembers.map((team) => (
           <ProfileCard key={team.id} team={team} />
         ))}
       </div>
-      <div className="max-w-[27rem] pt-5 mx-auto grid items-stretch gap-5 grid-cols-1 sm:grid-cols-3  lg:grid-cols-2 ">
+      <div className="max-w-[28rem] pt-5 mx-auto grid items-stretch gap-5 grid-cols-1 sm:grid-cols-3  lg:grid-cols-2 ">
         {oddTeamMembers.map((team) => (
           <ProfileCard key={team.id} team={team} />
         ))}

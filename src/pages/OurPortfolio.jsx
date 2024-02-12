@@ -43,8 +43,8 @@ const OurPortfolio = () => {
     },
     {
       id: 7,
-      img: "/furniture.png",
-      link: "https://www.918main.com/",
+      img: "/public/seaclub.jpg",
+      link: "https://seaclub.io/directory",
     },
   ];
   return (

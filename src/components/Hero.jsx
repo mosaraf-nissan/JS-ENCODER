@@ -36,7 +36,7 @@ const Hero = () => {
 
             {/* <!-- Title --> */}
             <div className="max-w-3xl max-h-full">
-              <h1 className="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-3xl dark:text-gray-200">
+              <h1 className="block font-bold text-gray-800 text-2xl md:text-5xl lg:text-3xl dark:text-gray-200">
                 <TypeAnimation
                   preRenderFirstString={true}
                   sequence={[
@@ -47,7 +47,7 @@ const Hero = () => {
                     3000,
                     "Get The Best Experience by UI/UX",
                     3000,
-                    "Get The Best Quality Web and ",
+                    "Get The Best Solution",
                     3000,
                   ]}
                   wrapper="span"

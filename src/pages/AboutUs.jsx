@@ -75,15 +75,15 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="mt-16 md:w-[50%] h-96 bg-[#004AAD] p-2 rounded-xl dark:bg-slate-900 ">
+              <div className=" md:w-[50%] lg:-mt-24 h-96 bg-[#004AAD] p-2 rounded-xl dark:bg-slate-900 ">
                 <h3 className="text-2xl text-center font-bold text-white">
                   How We <span className="">Formed</span>
                 </h3>
-                <div className=" mt-5 bg-cyan-50 border-4 rounded-xl shadow-md shadow-black/50 p-2 flex flex-col justify-center items-center -mt- dark:bg-white/5 dark:backdrop-blur-lg dark:shadow-xl dark:shadow-white/2 dark:border-0 dark:text-white">
+                <div className=" mt- bg-cyan-50 border-4 rounded-xl shadow-md shadow-black/50 p-2 flex flex-col justify-center items-center -mt- dark:bg-white/5 dark:backdrop-blur-lg dark:shadow-xl dark:shadow-white/2 dark:border-0 dark:text-white">
                   <p>
                     <b> They say :</b> every journey begins with a single step.
                     Ours started in a small room, fueled by the passion of 6
-                    developers and 3 co-founders with a shared dream: to build
+                    developers and 3 co-founders with a shared dream to build
                     innovative software solutions that empower businesses. We
                     weren&apos;t armed with an army of resources, just a few
                     computers and a relentless drive. Instead of chasing quick
@@ -93,6 +93,9 @@ const AboutUs = () => {
                     tailored to their unique needs. Local Clients use our custom
                     e-commerce websites and POS solutions, we poured our hearts
                     into solving their problems and exceeding expectations.
+                    Today, our journey has expanded with over 20 developers,
+                    both locally and internationally, working from the 6
+                    founding members' initial team.
                   </p>
                 </div>
               </div>
